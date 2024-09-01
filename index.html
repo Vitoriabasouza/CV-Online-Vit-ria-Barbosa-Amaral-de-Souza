@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV online</title>
+    <link rel="stylesheet" href="estilos_CV.css"> 
+    <!-- acima o link para a pagina de estilização do CSS -->
+</head>
+<body>
+    <header>
+        <h1>Portifólio Pessoal - Vitória Barbosa Amaral de Souza</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- acima o link de direcionamento para cada parte da página, links em uma unica página html-->
+        </nav>
+
+        <section id="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas, dedicada a adquirir habilidades em programação. Atualmente, estou fazendo cursos para aprender lógica e linguagem de programação, com interesse em aprofundar meus conhecimentos na área de dados. Sou motivada a aprender cada vez mais sobre tecnologia e, nas horas vagas, me aventuro na arte da cozinha, meu hobby favorito.</p>
+        </section>
+    
+        <section id="formacao">
+            <h2>Formação Educacional</h2>
+            <p>Concluí o curso Técnico em Recursos Humanos na Escola Técnica Estadual João Gomes de Araujo – ETEC em Pindamonhangaba (SP) em junho de 2020. Atualmente, estou cursando o Tecnólogo em Análise e Desenvolvimento de Sistemas na UNINTER – Centro Universitário Internacional, também em Pindamonhangaba (SP), com início em fevereiro de 2024 e término previsto para julho de 2026.<br><br>
+            Possuo nível intermediário em Inglês, com curso em andamento na All Net Educação. Além disso, concluí o curso básico de Libras no Inilibras Instituto de Educação e Cultura Ltda, com uma carga horária de 80 horas.</p>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Abaixo link para acesso a dois trabalhos que realizei durante um bootcamp com aprendizagem da linguagem Python. O primeiro link direciona para minha Pagina no Git Hub onde pode ter acesso ao código fonte da primeira versão desse sistema bancário e o segundo link direciona para o código fonte da segunda versão com a modelagem em POO desse projeto de sistema bancario.</p>
+            <ul>
+                <a href="https://github.com/Vitoriabasouza/Criando-um-Sistema-Bancario-com-Python/blob/main/Desafio%20DIO%20-%20Criando%20um%20Sistema%20Banc%C3%A1rio%20com%20Python.py">Versão 1</a><br>
+                <a href="https://github.com/Vitoriabasouza/Criando-um-Sistema-Bancario-com-Python/blob/main/Desafio%20DIO%20-%20Modelando%20o%20Sistema%20Banc%C3%A1rio%20em%20POO%20com%20Python.py">Versão 2</a>
+            </ul>
+            <!-- dois links que direcionam para pagina do Git Hub -->
+            
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="envia-mensagem.php" method="post">
+                <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+    </section>
+    </header>
+</body>
+</html>
